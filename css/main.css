@@ -651,6 +651,8 @@ input[type='checkbox']:checked + label > .custom-checkbox {
   display: flex;
   justify-content: center;
   padding-bottom: 50px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .filter > li {
@@ -677,6 +679,7 @@ input[type='checkbox']:checked + label > .custom-checkbox {
 }
 
 .portfolio__list {
+  margin-top: 0;
   margin-bottom: 0;
   display: flex;
   flex-wrap: wrap;
