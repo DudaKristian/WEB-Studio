@@ -1,0 +1,102 @@
+header {
+  border-bottom: 1px solid var(--header-border-color);
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  height: 80px;
+}
+
+.navigation {
+  display: flex;
+}
+.navigation :last-child {
+  margin-right: 0;
+}
+
+.navigation a {
+  color: var(--title-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  margin-bottom: 0;
+  @include transition(fill, color);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+.navigation__position {
+  position: relative;
+}
+
+a.navigation__current::after {
+  content: '';
+  display: block;
+  height: 4px;
+  width: 100%;
+  background-color: var(--accent-color);
+  border-radius: 2px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  top: 49px;
+}
+.navigation a.navigation__current {
+  color: var(--accent-color);
+  fill: var(--accent-color);
+}
+
+.navigation > li,
+.contacts > li:not(:last-child) {
+  padding: 0;
+  margin-right: 50px;
+}
+.navigation > li > a,
+.contacts > li > a {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.contacts {
+  display: flex;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: auto;
+}
+.contacts a {
+  color: var(--text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  @include transition(fill, color);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+
+    &:hover use {
+      fill: var(--accent-color);
+    }
+  }
+}
+
+.contacts use {
+  @include transition(fill, color);
+}
+.contacts__item svg {
+  margin-right: -3px;
+}
+.contacts__item:last-child {
+  margin-right: 0;
+}
+.contacts__icon {
+  width: 16px;
+  height: 12px;
+  fill: var(--text-color);
+}
+.contacts__text {
+  margin-left: 10px;
+}
