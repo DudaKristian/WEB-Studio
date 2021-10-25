@@ -25,8 +25,16 @@ h3 {
   color: var(--title-color);
 }
 
-section {
-  padding-bottom: 94px;
+@media screen and (min-width: 320px) {
+  section {
+    padding-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  section {
+    padding-bottom: 94px;
+  }
 }
 
 body {
@@ -50,7 +58,7 @@ body {
 }
 
 .container {
-  width: 1200px;
+  width: 100%;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
@@ -255,27 +263,54 @@ a.navigation__current::after {
   margin-left: 10px;
 }
 
-.hero {
-  margin-top: 0;
-  max-width: 1600px;
-  height: 600px;
-  padding: 200px 0;
-  background-color: var(--hero-background-color);
-  background-image: url(../images/hero-bgi.jpg);
-  margin-left: auto;
-  margin-right: auto;
+@media screen and (min-width: 320px) {
+  .hero {
+    margin-top: 0;
+    width: 480px;
+    height: 400px;
+    padding: 118px 60px;
+    background-color: var(--hero-background-color);
+    background-image: url(../images/hero-bgi.jpg);
+    object-fit: cover;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
-.hero__title {
-  color: var(--accent-white);
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  text-align: center;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  margin-bottom: 30;
-  margin-top: 0;
+@media screen and (min-width: 768px) {
+  .hero {
+    width: 768px;
+    padding: 118px 204px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    height: 600px;
+    padding: 200px 452px;
+    width: 1600px;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  .hero__title {
+    color: var(--accent-white);
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    margin-top: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 
 .backdrop {
@@ -473,13 +508,58 @@ input[type='checkbox']:checked + label > .custom-checkbox {
   color: var(--accent-color);
 }
 
-.container > ul {
-  margin-top: 0;
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .advantage__list {
+    display: block;
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 450px;
+  }
 }
 
-.advantage__list {
-  display: flex;
-  padding-top: 94px;
+@media screen and (min-width: 768px) {
+  .advantage__list {
+    display: flex;
+    flex-basis: calc((768px / 2) - 30px);
+    flex-wrap: wrap;
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .advantage__list {
+    flex-basis: calc((1200px / 4) - 90px);
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .advantage__item {
+    width: 354px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .advantage__item {
+    width: 270px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .advantage__item:nth-child(2n) {
+    margin-left: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .advantage__item:nth-child(-n + 2) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .advantage__item:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .advantage__title {
@@ -491,22 +571,45 @@ input[type='checkbox']:checked + label > .custom-checkbox {
   margin-top: 0;
 }
 
-.advantage__text {
-  justify-content: space-between;
-  margin-right: 30px;
+@media screen and (min-width: 320px) {
+  .advantage__title {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .advantage__title {
+    text-align: left;
+  }
 }
 
 .icons-background {
-  width: 270px;
+  width: 450px;
   height: 120px;
   background-color: var(--background-color);
   margin-bottom: 30px;
   border-radius: 4px;
-  padding: 25px 100px;
+  padding: 25px 190px;
 }
 
-.advantage__text--last {
-  margin-right: 0;
+@media screen and (min-width: 768px) {
+  .icons-background {
+    width: 354px;
+    padding: 25px 142px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .icons-background {
+    width: 270px;
+    padding: 25px 100px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .advantage__text {
+    margin-bottom: 0;
+  }
 }
 
 .title--margin {
