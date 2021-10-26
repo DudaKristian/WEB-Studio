@@ -1,6 +1,12 @@
-.title--margin {
-  margin-top: 0;
+.work__is-hidden {
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+  @media screen and (min-width: 1200px) {
+    display: block;
+  }
 }
+
 .work {
   display: flex;
   flex-basis: ((1200px-60px)/3);
