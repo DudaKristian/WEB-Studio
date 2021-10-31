@@ -1,39 +1,35 @@
 .hero {
-  @media screen and (min-width: 320px) {
-    margin-top: 0;
-    width: 480px;
-    height: 400px;
-    padding: 118px 60px;
-    background-color: var(--hero-background-color);
-    background-image: url(../images/hero-bgi.jpg);
-    object-fit: cover;
-    margin-left: auto;
-    margin-right: auto;
-  }
+  margin-top: 0;
+  width: 480px;
+  height: 400px;
+  padding: 118px 60px;
+  background-color: var(--hero-background-color);
+  background-image: url(../images/hero-bgi.jpg);
+  object-fit: cover;
+  // margin-left: auto;
+  // margin-right: auto;
+
   @media screen and (min-width: 768px) {
-    width: 768px;
+    width: 100%;
     padding: 118px 204px;
   }
   @media screen and (min-width: 1200px) {
     height: 600px;
     padding: 200px 452px;
-    width: 1600px;
+    min-width: 1600px;
   }
 }
 .hero__title {
-  @media screen and (min-width: 320px) {
-    color: var(--accent-white);
-    font-weight: 900;
-    font-size: 26px;
-    line-height: 1.62;
-    text-align: center;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    margin-bottom: 30px;
-    margin-top: 0;
-    // margin-right: auto;
-    // margin-left: auto;
-  }
+  color: var(--accent-white);
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  margin-top: 0;
+
   @media screen and (min-width: 1200px) {
     font-size: 44px;
     line-height: 1.36;

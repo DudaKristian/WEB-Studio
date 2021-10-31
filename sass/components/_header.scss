@@ -49,10 +49,16 @@ a.navigation__current::after {
   fill: var(--accent-color);
 }
 
-.navigation > li,
-.contacts > li:not(:last-child) {
+.navigation > li {
   padding: 0;
   margin-right: 50px;
+}
+
+.contacts > li:not(:last-child) {
+  @media screen and(min-width: 1200px) {
+    padding: 0;
+    margin-right: 50px;
+  }
 }
 .navigation > li > a,
 .contacts > li > a {
@@ -61,10 +67,15 @@ a.navigation__current::after {
 }
 
 .contacts {
-  display: flex;
-  margin-top: 0;
-  margin-bottom: 0;
-  margin-left: auto;
+  @media screen and(min-width:768px) {
+    margin-left: auto;
+    margin-right: 0;
+  }
+  @media screen and(min-width:1200px) {
+    display: flex;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
 }
 .contacts a {
   color: var(--text-color);

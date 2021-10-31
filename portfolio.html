@@ -59,11 +59,21 @@
           <div class="portfolio">
             <h1 class="title__hidden">Портфолио</h1>
             <ul class="filter">
-              <li><button type="button" class="filter__button">Все</button></li>
-              <li><button type="button" class="filter__button">Веб-сайты</button></li>
-              <li><button type="button" class="filter__button">Приложения</button></li>
-              <li><button type="button" class="filter__button">Дизайн</button></li>
-              <li><button type="button" class="filter__button">Маркетинг</button></li>
+              <li class="filter__item">
+                <button type="button" class="filter__button">Все</button>
+              </li>
+              <li class="filter__item">
+                <button type="button" class="filter__button">Веб-сайты</button>
+              </li>
+              <li class="filter__item">
+                <button type="button" class="filter__button">Приложения</button>
+              </li>
+              <li class="filter__item">
+                <button type="button" class="filter__button">Дизайн</button>
+              </li>
+              <li class="filter__item">
+                <button type="button" class="filter__button">Маркетинг</button>
+              </li>
             </ul>
             <ul class="portfolio__list">
               <li class="portfolio__item">
@@ -217,8 +227,8 @@
     </main>
     <footer class="footer">
       <div class="container footer--flex">
-        <address>
-          <div>
+        <div class="footer__address--tablet">
+          <address class="footer__address">
             <a class="logo" href="#">Web<span class="logo__text--white">Studio</span></a>
             <br />
             <span class="address"> г. Киев, пр-т Леси Украинки, 26 <br /></span>
@@ -226,50 +236,60 @@
               <span><a href="mailto:info@devstudio.com">info@devstudio.com</a> <br /></span>
               <span><a href="tel:+380961111111">+38 096 111 11 11</a></span>
             </div>
+          </address>
+          <div class="join">
+            <p class="footer__title footer__title--tablet">присоединяйтесь</p>
+            <ul class="join__list">
+              <li>
+                <a
+                  class="join__link"
+                  href="https://www.instagram.com/?hl=ru"
+                  target="_blank"
+                  rel="nofollow"
+                >
+                  <svg class="join__icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a
+                  class="join__link"
+                  href="https://twitter.com/?lang=ru"
+                  target="_blank"
+                  rel="nofollow"
+                >
+                  <svg class="join__icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a
+                  class="join__link"
+                  href="https://www.facebook.com/"
+                  target="_blank"
+                  rel="nofollow"
+                >
+                  <svg class="join__icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a
+                  class="join__link"
+                  href="https://ru.linkedin.com/"
+                  target="_blank"
+                  rel="nofollow"
+                >
+                  <svg class="join__icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
           </div>
-        </address>
-        <div class="join">
-          <p class="footer__title">присоединяйтесь</p>
-          <ul class="join__list">
-            <li>
-              <a
-                class="join__link"
-                href="https://www.instagram.com/?hl=ru"
-                target="_blank"
-                rel="nofollow"
-              >
-                <svg class="join__icon" width="20" height="20">
-                  <use href="./images/icons.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a
-                class="join__link"
-                href="https://twitter.com/?lang=ru"
-                target="_blank"
-                rel="nofollow"
-              >
-                <svg class="join__icon" width="20" height="20">
-                  <use href="./images/icons.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a class="join__link" href="https://www.facebook.com/" target="_blank" rel="nofollow">
-                <svg class="join__icon" width="20" height="20">
-                  <use href="./images/icons.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a class="join__link" href="https://ru.linkedin.com/" target="_blank" rel="nofollow">
-                <svg class="join__icon" width="20" height="20">
-                  <use href="./images/icons.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
         </div>
         <div class="subscribe">
           <p class="footer__title">Подпишитесь на рассылку</p>
@@ -285,7 +305,7 @@
                 />
               </label>
             </form>
-            <button type="submit" class="button">
+            <button type="submit" class="button footer__button">
               Подписаться
               <svg class="subscribe__icon" width="24" height="24">
                 <use href="./images/icons.svg#icon-send"></use>

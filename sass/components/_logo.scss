@@ -7,8 +7,13 @@
   font-style: normal;
 }
 .logo--margin {
-  margin-bottom: 0;
-  margin-right: 93px;
+  @media screen and (max-width: 1199px) {
+    margin-right: 88px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
+    margin-right: 93px;
+  }
 }
 .logo__text--black {
   color: var(--logo-secondary-color);
