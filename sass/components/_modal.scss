@@ -40,7 +40,7 @@
   height: 30px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   fill: var(--logo-secondary-color);
-  @include transition-solo (fill);
+  @include transition-solo(fill);
 
   &:hover {
     cursor: pointer;
@@ -81,8 +81,8 @@
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
 
-  @include transition-trio (outline, border, border-radius);
-  
+  @include transition-trio(outline, border, border-radius);
+
   &:focus {
     outline: none;
     border: 1px solid var(--accent-color);
@@ -101,7 +101,6 @@
   fill: var(--title-color);
 
   @include transition-solo(fill);
-  
 }
 .modal__textarea {
   display: block;
@@ -113,8 +112,8 @@
   padding-left: 16px;
   padding-right: 16px;
 
-  @include transition-trio (outline, border, border-radius);
- 
+  @include transition-trio(outline, border, border-radius);
+
   resize: none;
 
   border: 1px solid rgba(33, 33, 33, 0.2);
