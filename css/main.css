@@ -306,6 +306,7 @@ a.navigation__current::after {
   background-color: var(--hero-background-color);
   background-image: url(../images/hero-bgi.jpg);
   object-fit: cover;
+  background-position: center;
 }
 
 @media screen and (min-width: 768px) {
@@ -318,8 +319,7 @@ a.navigation__current::after {
 @media screen and (min-width: 1200px) {
   .hero {
     height: 600px;
-    padding: 200px 452px;
-    min-width: 1600px;
+    padding: 200px 0;
   }
 }
 
@@ -339,6 +339,9 @@ a.navigation__current::after {
   .hero__title {
     font-size: 44px;
     line-height: 1.36;
+    max-width: 696px;
+    margin-right: auto;
+    margin-left: auto;
   }
 }
 
@@ -1038,7 +1041,7 @@ input[type='checkbox']:checked + label > .custom-checkbox {
 
 @media screen and (max-width: 1199px) and (min-width: 768px) {
   .footer__address {
-    margin-right: 165px;
+    margin-right: auto;
   }
 }
 
@@ -1081,6 +1084,7 @@ input[type='checkbox']:checked + label > .custom-checkbox {
   .join {
     text-align: center;
     margin-bottom: 60px;
+    margin-right: 89px;
   }
 }
 

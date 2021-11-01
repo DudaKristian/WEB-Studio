@@ -6,8 +6,7 @@
   background-color: var(--hero-background-color);
   background-image: url(../images/hero-bgi.jpg);
   object-fit: cover;
-  // margin-left: auto;
-  // margin-right: auto;
+  background-position: center;
 
   @media screen and (min-width: 768px) {
     width: 100%;
@@ -15,8 +14,7 @@
   }
   @media screen and (min-width: 1200px) {
     height: 600px;
-    padding: 200px 452px;
-    min-width: 1600px;
+    padding: 200px 0;
   }
 }
 .hero__title {
@@ -33,5 +31,8 @@
   @media screen and (min-width: 1200px) {
     font-size: 44px;
     line-height: 1.36;
+    max-width: 696px;
+    margin-right: auto;
+    margin-left: auto;
   }
 }

@@ -16,7 +16,7 @@
     text-align: center;
     margin-bottom: 60px;
     @media screen and (min-width: 768px) {
-      margin-right: 165px;
+      margin-right: auto;
     }
   }
 }
@@ -53,6 +53,7 @@
   @media screen and (max-width: 1199px) {
     text-align: center;
     margin-bottom: 60px;
+    margin-right: 89px;
   }
   @media screen and (min-width: 1200px) {
     margin-right: 70px;
