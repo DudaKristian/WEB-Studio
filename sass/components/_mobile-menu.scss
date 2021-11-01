@@ -64,6 +64,8 @@
 .is-hidden__menu {
   @include transition(transform, opacity);
   opacity: 0;
+  pointer-events: none;
+
   transform: scale(0.5);
 }
 .is-open {
