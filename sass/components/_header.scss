@@ -5,11 +5,18 @@ header {
 .nav {
   display: flex;
   align-items: center;
-  height: 80px;
+  height: 60px;
+  position: relative;
+  @media screen and (min-width: 768px) {
+    height: 80px;
+  }
 }
 
 .navigation {
   display: flex;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 }
 .navigation :last-child {
   margin-right: 0;
@@ -67,6 +74,9 @@ a.navigation__current::after {
 }
 
 .contacts {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
   @media screen and(min-width:768px) {
     margin-left: auto;
     margin-right: 0;
