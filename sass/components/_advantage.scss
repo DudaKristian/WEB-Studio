@@ -3,7 +3,7 @@
     display: block;
     margin-top: 0;
     margin-bottom: 0;
-    width: 450px;
+    width: 100%;
   }
   @media screen and (min-width: 768px) {
     display: flex;
@@ -55,20 +55,20 @@
 }
 
 .icons-background {
-  max-width: 100%;
+  width: 100%;
   height: 120px;
   background-color: var(--background-color);
   margin-bottom: 30px;
   border-radius: 4px;
-  padding: 25px 190px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   @media screen and (min-width: 768px) {
     min-width: calc((100% - 30px) / 2);
-    padding: 25px 142px;
   }
   @media screen and (min-width: 1200px) {
     min-width: calc((100% - 90px) / 4);
-    padding: 25px 100px;
   }
 }
 .advantage__text {

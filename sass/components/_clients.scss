@@ -13,12 +13,13 @@
 }
 .clients__item {
   margin: 15px;
-  max-width: calc((100% - 60px) / 2);
+  width: calc((100% - 60px) / 2);
+
   @media screen and (min-width: 768px) {
-    max-width: calc((100% - 90px) / 3);
+    width: calc((100% - 90px) / 3);
   }
   @media screen and (min-width: 1200px) {
-    max-width: calc((100% - 180px) / 6);
+    width: calc((100% - 180px) / 6);
   }
 }
 
@@ -27,8 +28,9 @@
   border: 1px solid #afb1b8;
   border-radius: 4px;
   height: 92px;
-  display: block;
-  padding: 16px 52px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   fill: var(--logo-color);
   @include transition(border, fill);
   &:hover,
@@ -37,11 +39,5 @@
     border: 1px solid var(--accent-color);
     cursor: pointer;
     border-radius: 4px;
-  }
-  @media screen and (min-width: 768px) {
-    padding: 16px 60px;
-  }
-  @media screen and (min-width: 1200px) {
-    padding: 16px 32px;
   }
 }

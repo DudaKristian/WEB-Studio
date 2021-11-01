@@ -542,7 +542,7 @@ input[type='checkbox']:checked + label > .custom-checkbox {
     display: block;
     margin-top: 0;
     margin-bottom: 0;
-    width: 450px;
+    width: 100%;
   }
 }
 
@@ -606,25 +606,25 @@ input[type='checkbox']:checked + label > .custom-checkbox {
 }
 
 .icons-background {
-  max-width: 100%;
+  width: 100%;
   height: 120px;
   background-color: var(--background-color);
   margin-bottom: 30px;
   border-radius: 4px;
-  padding: 25px 190px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @media screen and (min-width: 768px) {
   .icons-background {
     min-width: calc((100% - 30px) / 2);
-    padding: 25px 142px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .icons-background {
     min-width: calc((100% - 90px) / 4);
-    padding: 25px 100px;
   }
 }
 
@@ -718,6 +718,10 @@ input[type='checkbox']:checked + label > .custom-checkbox {
   .teammember {
     width: 100%;
     height: 622px;
+    margin-bottom: 30px;
+  }
+  .teammember:last-child {
+    margin-bottom: 0;
   }
 }
 
@@ -812,18 +816,18 @@ input[type='checkbox']:checked + label > .custom-checkbox {
 
 .clients__item {
   margin: 15px;
-  max-width: calc((100% - 60px) / 2);
+  width: calc((100% - 60px) / 2);
 }
 
 @media screen and (min-width: 768px) {
   .clients__item {
-    max-width: calc((100% - 90px) / 3);
+    width: calc((100% - 90px) / 3);
   }
 }
 
 @media screen and (min-width: 1200px) {
   .clients__item {
-    max-width: calc((100% - 180px) / 6);
+    width: calc((100% - 180px) / 6);
   }
 }
 
@@ -832,8 +836,9 @@ input[type='checkbox']:checked + label > .custom-checkbox {
   border: 1px solid #afb1b8;
   border-radius: 4px;
   height: 92px;
-  display: block;
-  padding: 16px 52px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   fill: var(--logo-color);
   transition-property: border, fill;
   transition-duration: 250ms;
@@ -845,18 +850,6 @@ input[type='checkbox']:checked + label > .custom-checkbox {
   border: 1px solid var(--accent-color);
   cursor: pointer;
   border-radius: 4px;
-}
-
-@media screen and (min-width: 768px) {
-  .client__link {
-    padding: 16px 60px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .client__link {
-    padding: 16px 32px;
-  }
 }
 
 .filter {
