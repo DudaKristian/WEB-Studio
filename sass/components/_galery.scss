@@ -34,7 +34,7 @@
   border: 1px solid #eeeeee;
   margin-bottom: 30px;
   width: 100%;
-  // flex-basis: calc((1200px - 60px) / 3);
+
   @include transition-solo(box-shadow);
   & img {
     width: 100%;
