@@ -45,6 +45,11 @@ body {
   line-height: 1.71;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 :root {
   --accent-color: #2196f3;
   --title-color: #212121;
