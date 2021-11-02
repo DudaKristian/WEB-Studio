@@ -567,7 +567,7 @@ a.navigation__current::after {
   left: 50%;
   transform: translate(-50%, -50%);
   margin-top: 30px;
-  padding-bottom: 50px;
+  padding-bottom: 40px;
 }
 
 @media screen and (min-width: 480px) {
@@ -576,14 +576,9 @@ a.navigation__current::after {
   }
 }
 
-@media screen and (min-width: 768px) {
-  .modal {
-    padding-bottom: 94px;
-  }
-}
-
 @media screen and (min-width: 1200px) {
   .modal {
+    margin-top: 20px;
     max-height: 581px;
     max-width: 528px;
     overflow-y: hidden;

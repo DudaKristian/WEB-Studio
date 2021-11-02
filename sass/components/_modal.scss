@@ -30,16 +30,14 @@
   left: 50%;
   transform: translate(-50%, -50%);
   margin-top: 30px;
-  padding-bottom: 50px;
+  padding-bottom: 40px;
 
   @media screen and (min-width: 480px) {
     max-width: 450px;
   }
-  @media screen and (min-width: 768px) {
-    // margin-top: 94px;
-    padding-bottom: 94px;
-  }
+
   @media screen and (min-width: 1200px) {
+    margin-top: 20px;
     max-height: 581px;
     max-width: 528px;
     overflow-y: hidden;
@@ -200,8 +198,3 @@ input[type='checkbox']:checked + label > .custom-checkbox {
   text-decoration-line: underline;
   color: var(--accent-color);
 }
-// .button__modal {
-//   @media screen and(max-width:1199px) {
-//     margin-bottom: 50px;
-//   }
-// }
