@@ -216,34 +216,51 @@
           <h2 class="title title--margin">Чем мы занимаемся</h2>
           <ul class="work">
             <li class="work__item">
-              <img
-                src="./images/pc-img.jpg"
+              <picture>
+                <img
+                srcset="./images/notebook1.jpg 1x,
+                ./images/notebook2.jpg 2x
+                "
+                src="./images/notebook2.jpg"
                 width="370"
                 height="294"
                 alt="сотрудник работает за компьютером"
               />
+              </picture>
               <div class="work__description">
                 <p class="work__text">Десктопные приложения</p>
               </div>
             </li>
             <li class="work__item">
-              <img
-                src="./images/cellphone.jpg"
+              <picture>
+                <img
+                srcset="./images/smartphone1.jpg 1x,
+                ./images/smartphone2.jpg 2x
+                "
+                src="./images/smartphone2.jpg"
                 width="370"
                 height="294"
                 alt="сотрудник работает с смартфоном и ноутбуком"
               />
+              </picture>
+              
               <div class="work__description">
                 <p class="work__text">Мобильные приложения</p>
               </div>
             </li>
             <li class="work__item">
-              <img
-                src="./images/tablet.jpg"
+              <picture>
+                <img
+                srcset="./images/1.jpg 1x,
+                ./images/2.jpg 2x
+                "
+                src="./images/2.jpg"
                 width="370"
                 height="294"
                 alt="сотрудник рисует на планшете"
               />
+              </picture>
+              
               <div class="work__description">
                 <p class="work__text">Дизайнерские решения</p>
               </div>
@@ -257,12 +274,29 @@
           <h2 class="title team__title">Наша команда</h2>
           <ul class="team__list">
             <li class="teammember">
-              <img
-                src="./images/igor-demjanenko.jpg"
-                width="270"
-                height="260"
+              <picture>
+                <source
+                  srcset="
+                    ./images/igor-desk1.jpg 1x,
+                    ./images/igor-desk2.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                    />
+                <source srcset="
+                ./images/igor-tab1.jpg 1x,
+                ./images/igor-tab2.jpg 2x,
+                "
+                media="(min-width:768px)"
+                >
+                <img
+                srcset="./images/igor-mob1.jpg 1x, ./images/igor-mob2.jpg 2x"
+                src="./images/igor-mob2.jpg"
+                width="450"
+                height="460"
                 alt="Портрет Игоря Демяненко"
               />
+              </picture>
+              
               <h3 class="teammember__name">Игорь Демьяненко</h3>
               <p class="teammember__job" lang="en">Product Designer</p>
               <ul class="link__list">
@@ -317,12 +351,29 @@
               </ul>
             </li>
             <li class="teammember">
-              <img
-                src="./images/olga-repina.jpg"
-                width="270"
-                height="260"
+              <picture>
+                <source
+                  srcset="
+                    ./images/olga-desk1.jpg 1x,
+                    ./images/olga-desk2.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                    />
+                <source srcset="
+                ./images/olga-tab1.jpg 1x,
+                ./images/olga-tab2.jpg 2x,
+                "
+                media="(min-width:768px)"
+                >
+                <img
+                srcset="./images/olga-mob1.jpg 1x, ./images/olga-mob2.jpg 2x"
+                src="./images/olga-mob2.jpg"
+                width="450"
+                height="460"
                 alt="Портрет Ольги Репиной"
               />
+              </picture>
+              
               <h3 class="teammember__name">Ольга Репина</h3>
               <p class="teammember__job" lang="en">Frontend Developer</p>
               <ul class="link__list">
@@ -377,12 +428,29 @@
               </ul>
             </li>
             <li class="teammember teammember__last-row">
-              <img
-                src="./images/nikolaj-tarasov.jpg"
-                width="270"
-                height="260"
+              <picture>
+                <source
+                  srcset="
+                    ./images/nick-desk1.jpg 1x,
+                    ./images/nick-desk2.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                    />
+                <source srcset="
+                ./images/nick-tab1.jpg 1x,
+                ./images/nick-tab2.jpg 2x,
+                "
+                media="(min-width:768px)"
+                >
+                <img
+                srcset="./images/nick-mob1.jpg 1x, ./images/nick-mob2.jpg 2x"
+                src="./images/nick-mob2.jpg"
+                width="450"
+                height="460"
                 alt="Портрет Николая Тарасова"
               />
+              </picture>
+              
               <h3 class="teammember__name">Hиколай Тарасов</h3>
               <p class="teammember__job" lang="en">Marketing</p>
               <ul class="link__list">
@@ -437,12 +505,29 @@
               </ul>
             </li>
             <li class="teammember teammember__last-row">
-              <img
-                src="./images/mihail-ermakov.jpg"
-                width="270"
-                height="260"
+              <picture>
+                <source
+                  srcset="
+                    ./images/mih-desk1.jpg 1x,
+                    ./images/mih-desk2.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                    />
+                <source srcset="
+                ./images/mih-tab1.jpg 1x,
+                ./images/mih-tab2.jpg 2x,
+                "
+                media="(min-width:768px)"
+                >
+                <img
+                srcset="./images/mih-mob1.jpg 1x, ./images/mih-mob2.jpg 2x"
+                src="./images/mih-mob2.jpg"
+                width="450"
+                height="460"
                 alt="Портрет Михаила Ермакова"
               />
+              </picture>
+              
               <h3 class="teammember__name">Михаил Ермаков</h3>
               <p class="teammember__job" lang="en">UI Designer</p>
               <ul class="link__list">
