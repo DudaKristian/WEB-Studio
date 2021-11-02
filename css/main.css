@@ -578,7 +578,6 @@ a.navigation__current::after {
 
 @media screen and (min-width: 768px) {
   .modal {
-    margin-top: 94px;
     padding-bottom: 94px;
   }
 }
