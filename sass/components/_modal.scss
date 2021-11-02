@@ -10,8 +10,7 @@
 
   @include transition(opacity, visibility);
 }
-
-.is-hidden {
+.is-hidden__modal {
   visibility: hidden;
   opacity: 0;
   pointer-events: none;

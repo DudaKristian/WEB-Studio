@@ -61,16 +61,19 @@
     display: none;
   }
 }
-.is-hidden__menu {
-  @include transition(transform, opacity);
+.is-hidden {
   opacity: 0;
+
+  @include transition(transform, opacity);
   transform: scale(0);
 }
 .is-open {
-  @include transition(transform, opacity);
   opacity: 1;
+
+  @include transition(transform, opacity);
   transform: scale(1);
 }
+
 .mobile-menu__navigation {
   margin-top: 0;
   margin-bottom: 0;
