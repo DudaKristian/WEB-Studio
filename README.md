@@ -1,2 +1,5 @@
-# goit-markup-hw-08
-HW 8 adaptation
+My first educational project
+
+HTML/SASS only. Minimal JS for toggle modal.
+
+Fully adaptive
